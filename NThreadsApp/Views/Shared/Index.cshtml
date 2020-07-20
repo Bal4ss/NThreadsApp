@@ -1,0 +1,12 @@
+﻿@using NThreadsApp.Moduls;
+@{ 
+    ViewData["Title"] = $"{Config.ProjectName} - Главная";
+}
+    <div class="files-wrapper">
+        <div class="flex-row files-input-wrapper">
+            <input id="files-input" type="file" name="files" value="" onchange="fileChange(this)" />
+            <a id="Submit" onclick="Submit()">Проверить</a>
+        </div>
+        <div id="files">
+        </div>
+    </div>

@@ -1,0 +1,131 @@
+﻿*,*:before,*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header{
+    line-height: 3vh;
+    padding: 5vh 0;
+    background-color: #2C485C;
+}
+.header .main-link{
+    font-size: 25px;
+}
+.header a{
+    color: #B0CDE1;
+    text-decoration: none;
+}
+.header ul{
+    margin-left: 25px;
+    list-style: none;
+}
+.header ul li{
+    margin-left: 15px;
+}
+.header ul li a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.header ul li a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #B0CDE1;
+    transition: left 0.3s ease;
+}
+.header ul li a:hover:after{
+    left: 0;
+}
+.main{
+   padding-bottom: 16vh; 
+}
+.files-wrapper{
+    padding: 50px 10px;
+}
+.files-input-wrapper{
+    justify-content: space-between;
+}
+.files-input-wrapper a{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: #2C485C;
+    overflow: hidden;
+}
+.files-input-wrapper a:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    background-color: #2C485C;
+    transition: left 0.3s ease;
+}
+.files-input-wrapper a:hover:after{
+    left: 0;
+}
+#files{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.file-block{
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+.file-name{
+    color: #2C485C;
+    width: 50%;
+    overflow: hidden;
+}
+.result{
+    display: block;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+.contacts-wrapper{
+    padding: 50px 10px;
+}
+.contacts-wrapper span,
+.contacts-wrapper p{
+    display: inline;
+}
+.contacts-wrapper span,
+.contacts-wrapper h1{
+    color: #2C485C;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5vh;
+    line-height: 3vh;
+    background-color: #48535C;
+    color: #69ACDB;
+    cursor: default;
+}

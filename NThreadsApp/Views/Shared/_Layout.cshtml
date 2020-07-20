@@ -1,0 +1,40 @@
+﻿@using NThreadsApp.Moduls;
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <div class="header">
+        <div class="container flex-row">
+            <a class="main-link" asp-area="" asp-controller="Home" asp-action="Index">NThreadsApp</a>
+            <ul class="flex-row main-menu">
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>@Config.ProjectName v<span>@Config.Version</span></p>
+            <p>by @Config.DevName</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/js/jQuery.js"></script>
+    <script type="text/javascript" src="~/js/JavaScript.js"></script>
+</body>
+</html>

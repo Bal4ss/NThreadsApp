@@ -1,0 +1,23 @@
+﻿@using NThreadsApp.Moduls;
+@{
+    ViewData["Title"] = $"{Config.ProjectName} - Контакты";
+}
+
+    <div class="contacts-wrapper">
+        <h1>Контакты</h1>
+        <div class="contacts-block">
+            <div class="contacts-devname">
+                <span>Разработчик: </span>
+                <p>@Config.DevName</p>
+            </div>
+            <div class="contacts-email">
+                <span>Email-адрес: </span>
+                <p><a href="mailto:@Config.MyEmail">@Config.MyEmail</a></p>
+            </div>
+            <div class="contacts-devvk">
+                <span>Vk: </span>
+                <p><a href="@Config.DevVK">link</a></p>
+            </div>
+        </div>
+    </div>
+
